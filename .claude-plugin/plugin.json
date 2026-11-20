@@ -1,0 +1,7 @@
+{
+  "name": "s37-kit",
+  "description": "The S37 Verification Kit: six standalone verification checks that make AI-assisted work inspectable, plus the scaffolding guide for keeping the ground under the model in order. Trace every claim to a source, test whether precision was earned, ask the document what it was not written to answer, argue its conclusion in reverse, record what you expected before acting, and ship deliverables that carry their own evidence. Each piece works alone.",
+  "version": "0.1.0",
+  "author": { "name": "Joshua Shane" },
+  "license": "CC-BY-SA-4.0"
+}

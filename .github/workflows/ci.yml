@@ -1,0 +1,35 @@
+# The full suite on Linux and macOS, including the real install, update and uninstall cycle
+# through Claude Code, Codex and Gemini CLI (tests/install.test.ts), which needs no login. Kimi
+# Code is a stand-in command the tests create, so every runner tests the Kimi leg too.
+name: ci
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - name: Install Claude Code, Codex and Gemini CLI (for the install tests)
+        run: npm install -g @anthropic-ai/claude-code @openai/codex @google/gemini-cli
+      - name: Show what this runner has
+        run: |
+          bun --version
+          claude --version
+          codex --version
+          gemini --version
+      - name: Tests
+        run: bun test --timeout 300000
+      - name: The install tests must have run, not skipped
+        run: |
+          bun test tests/install.test.ts --timeout 300000 2>&1 | tee install.log
+          grep -qE "^ *(9|[1-9][0-9]+) pass" install.log
+          if grep -qE "^ *[1-9][0-9]* skip" install.log; then echo "::error::install tests were skipped"; exit 1; fi

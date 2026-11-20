@@ -1,0 +1,9 @@
+# Word-list waivers for the build's wording check: word|file|reason
+# The build flags a few common words for a second look. One line per word and file says the
+# word is used in its ordinary sense there, and why.
+manifest|manifest.md|Ordinary "list of files" sense: this file is a manifest of the URLs to fetch, and "manifest" is the standard word for one.
+manifest|CHANGELOG.md|Names the file manifest.md (the zero-install path).
+manifest|README.md|Names the file manifest.md (the zero-install path).
+manifest|SUPPORT.md|Names the file manifest.md (the zero-install path).
+manifest|SECURITY.md|Names the file manifest.md (the zero-install path).
+manifest|tests/kit.test.ts|Names the file manifest.md (the zero-install path).

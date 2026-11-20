@@ -1,0 +1,11 @@
+{
+  "name": "s37-verification-kit",
+  "owner": { "name": "Signal 37" },
+  "plugins": [
+    {
+      "name": "s37-kit",
+      "source": "./",
+      "description": "The S37 Verification Kit: six standalone verification checks that make AI-assisted work inspectable."
+    }
+  ]
+}

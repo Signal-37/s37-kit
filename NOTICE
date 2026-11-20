@@ -1,0 +1,54 @@
+The S37 Verification Kit
+Copyright (c) 2026 Joshua Shane
+
+Licensed under CC BY-SA 4.0 (LICENSE holds the full legal text). The grant and its
+reasons are in LICENSING.md. The licence is non-exclusive: for other terms, ask.
+
+WHAT THIS IS
+------------
+Six verification Checks, written as prose skills for agent harnesses that read the
+Agent Skills standard:
+
+  adversarial-pass       argue the opposite using only the document's own evidence
+  attested-deliverable   produce or retrofit a deliverable that carries its evidence
+  claim-to-source        trace every load-bearing claim back to a source
+  off-script-check       ask what the document was not written to answer
+  prediction-log         stake a dated, falsifiable prediction and score it later
+  specificity-check      separate constrained claims from unconstrained ones
+
+Each Check runs standalone. None requires the others, a corpus, a panel, or any part
+of the system it came from.
+
+ATTRIBUTION
+-----------
+If you use or adapt these Checks, credit:
+
+  The S37 Verification Kit, Joshua Shane
+  https://github.com/Signal-37/s37-kit
+
+Under ShareAlike, derivative method packs carry CC BY-SA 4.0 forward.
+
+PROVENANCE
+----------
+The Checks in this Kit are generated from the author's master copy and are not
+hand-edited in the distributed tree. A `.generated` marker in the built plugin records
+that provenance. Report issues in this repository; fixes are made at the source
+and the Checks regenerated.
+
+CREDIT
+------
+Four of the Checks (claim-to-source, off-script-check, adversarial-pass and
+specificity-check) operationalise the four explanation-quality checks Rafael Kaufmann
+proposed (Primordia, 2026). He is a cited source, not a co-author. The procedures,
+verdicts and tags are the author's.
+
+Credit to Rajiv Pant (Synthesis Engineering, https://synthesiswork.org/) for the
+zero-install manifest pattern the Kit uses, and for his practice of publishing agent skills
+in the open.
+
+RELATED LICENSES
+----------------
+Other parts of the S37 release ship under different terms by design (see LICENSING.md):
+code under Apache-2.0, the learning loop under AGPL-3.0, and J. Scott King's components
+under his own terms. This Kit is method content, so it takes a content licence with
+share-alike.
