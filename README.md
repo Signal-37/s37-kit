@@ -2,7 +2,7 @@
 
 The S37 Verification Kit is six standalone checks that make AI-assisted work inspectable. Each check is a set of instructions an AI assistant follows against a document you already have, and each reports what it found and what it did not cover. Each runs on its own: none needs the others, a corpus, or any other part of S37.
 
-Pre-release: no versioned release yet. Before you rely on it, read the [Limits](#limits).
+First released 2026-11-20 as 0.1.0. `VERSION` holds the current version. Before you rely on it, read the [Limits](#limits).
 
 ## What's in the Verification Kit
 
@@ -80,7 +80,7 @@ The S37 Learning Loop is a separate S37 product: https://github.com/Signal-37/s3
 - On a document with more than roughly forty load-bearing claims, `claim-to-source` checks the highest-consequence twenty and names the ones it did not reach.
 - `prediction-log` tells you little from a single entry. The pattern it is for shows only after many entries have been checked against what happened.
 - The tests check the installer, the plugin files for each agent, the licence terms, and that every zero-install URL points at a file in this repository. Nothing here tests what a check finds when an agent runs it.
-- The zero-install manifest fetches each check from a GitHub raw URL on this repository's `main` branch, so an assistant follows whatever is there at that moment. While the repository is private, those URLs work only for people with access to it.
+- The zero-install manifest fetches each check from a GitHub raw URL on this repository's `main` branch, so an assistant follows whatever is there at that moment.
 
 ## Supported models
 
@@ -118,7 +118,7 @@ SECURITY.md                 what the checks touch, and how to report a problem
 SUPPORT.md                  what it's tested on, and how to get help
 CONTRIBUTING.md             issues and sign-off
 GOVERNANCE.md               who decides what
-CHANGELOG.md                pre-release history
+CHANGELOG.md                release history
 ```
 
 ## Licence

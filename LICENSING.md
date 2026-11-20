@@ -57,4 +57,5 @@ Append-only. The authoritative record of which release shipped under which terms
 
 Copies built after these terms were adopted but before the first versioned release are pre-release builds, and the grant in this document applies to them.
 
-*No versioned release yet.*
+- **0.1.0**, released 2026-11-20. The first public release. Content under CC BY-SA 4.0, code under Apache-2.0, as this document assigns them.
+- **0.1.1**, released 2026-11-20. Content under CC BY-SA 4.0, code under Apache-2.0, as this document assigns them. Changes documents only.

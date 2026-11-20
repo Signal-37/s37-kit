@@ -53,7 +53,7 @@ The README lists the other ways. Installed or fetched, the instructions in each 
 
 - A check tells you what it found and what it could not check. None of them certifies a document as correct. A clean pass means no problem of that kind was found, never that none exists.
 - A check can also report a finding in a sound document. Treat one finding as a place to look, not as a verdict.
-- This file fetches each check from this repository's `main` branch, so an assistant follows whatever is there at that moment. While the repository is private, these URLs work only for people with access to it.
+- This file fetches each check from this repository's `main` branch, so an assistant follows whatever is there at that moment.
 - The full list is in the README.
 
 Licensed CC BY-SA 4.0. See LICENSE and NOTICE.

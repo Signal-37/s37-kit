@@ -1,6 +1,6 @@
 {
   "name": "s37-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The S37 Verification Kit: six standalone verification checks that make AI-assisted work inspectable.",
   "author": { "name": "Joshua Shane" },
   "license": "CC-BY-SA-4.0",

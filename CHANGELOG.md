@@ -1,11 +1,19 @@
 # Changelog
 
-There is no versioned release yet, so every entry below is a pre-release build. Commit hashes are in brackets. Versions will be numbered MAJOR.MINOR.PATCH, starting at 0.1.0: the middle number rises for a new check or a change in behaviour, the last for wording fixes, and 1.0.0 marks committed stable behaviour.
+Commit hashes are in brackets. They point to the history before 0.1.0, which is kept privately. The public repository starts at 0.1.0 with a single commit. Versions are numbered MAJOR.MINOR.PATCH: the middle number rises for a new check or a change in behaviour, the last for wording fixes, and 1.0.0 marks committed stable behaviour.
 
-## Pre-release
+## Releases
 
-### 0.1.0, not yet released: release documents, installer, tests
+### 0.1.1, 2026-11-20: documents say the Kit is released and public
 
+- The README, `SUPPORT.md`, `GOVERNANCE.md`, `LICENSING.md` and this changelog said the Kit had no versioned release. They now say it is released.
+- The README, `SUPPORT.md` and `manifest.md` said the zero-install URLs worked only for people with access to a private repository. That sentence is removed. The repository is public.
+- `LICENSING.md` records 0.1.0 and 0.1.1 in its Releases section.
+- Changes documents only. The checks, the installer and the tests are unchanged.
+
+### 0.1.0, 2026-11-20: release documents, installer, tests
+
+- The first public release.
 - `install.sh` installs the Verification Kit into every supported agent it finds: Claude Code, Codex, Gemini CLI and Kimi Code. `sh install.sh --uninstall` removes it. One agent failing does not stop the others; the summary says what happened in each.
 - The plugin files for Codex (`.codex-plugin/plugin.json`, `.agents/plugins/marketplace.json`) and Gemini CLI (`gemini-extension.json`) are added. The plugin is `s37-kit` in every agent.
 - Each check's `SKILL.md` states its licence in its frontmatter.
@@ -21,6 +29,10 @@ There is no versioned release yet, so every entry below is a pre-release build. 
 - Renamed the S37 Verification Kit. The marketplace is now `s37-verification-kit`, so it no longer clashes with the S37 Learning Loop's `s37`; install with `claude plugin install s37-kit@s37-verification-kit`.
 - The plugin file names the author as Joshua Shane and the licence as CC BY-SA 4.0.
 - Corrects the off-script-check description in the manifest and NOTICE, and a count in the quickstart.
+
+## Pre-release
+
+Builds before 0.1.0.
 
 ### 2026-09-28: credit
 

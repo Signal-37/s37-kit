@@ -1,6 +1,6 @@
 # Support
 
-The S37 Verification Kit is a pre-release. There is no versioned release yet, no service-level commitment, and no paid support. Help is best effort. Questions, bugs and suggestions go in the repository's issues; see `CONTRIBUTING.md`. Security problems go privately, as `SECURITY.md` says.
+The S37 Verification Kit has no service-level commitment and no paid support. Help is best effort. Questions, bugs and suggestions go in the repository's issues; see `CONTRIBUTING.md`. Security problems go privately, as `SECURITY.md` says.
 
 ## What it's tested on
 
@@ -43,7 +43,7 @@ The checks are text and need no particular operating system. `install.sh` and th
 
 ## Requirements
 
-- For the zero-install path: a chat assistant and the `manifest.md` URL. While the repository is private, the raw URLs work only for people with access to it.
+- For the zero-install path: a chat assistant and the `manifest.md` URL.
 - For the skills-folder path: an agent that loads skills from a folder.
 - For the plugin path: Claude Code.
 - For `install.sh`: at least one of Claude Code, Codex, Gemini CLI or Kimi Code, on your PATH. Gemini CLI and Kimi Code are installed only when the script runs from a clone.
